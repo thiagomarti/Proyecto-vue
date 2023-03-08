@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="">
+  <title>
+ 
+  </title>
+
+  <script>
+
+    //color navbar
+document.addEventListener("DOMContentLoaded", function() {
+    const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", function() {
+  if (window.pageYOffset > navbar.offsetHeight) {
+    navbar.classList.add("navbar-scroll");
+  } else {
+    navbar.classList.remove("navbar-scroll");
+  }
+});
+  });
+  /// minimenu
+
+  "use strict";
+
+var button = document.querySelector('.menu__button');
+var menu = document.querySelector('.menu__body');
+var close = document.querySelector('.menu__header button');
+var overlay = document.querySelector('.menu__overlay');
+function showMenu() {
+  button.setAttribute('hidden', '');
+  menu.removeAttribute('hidden');
+  overlay.removeAttribute('hidden');
+}
+;
+function hideMenu() {
+  menu.setAttribute('hidden', '');
+  overlay.setAttribute('hidden', '');
+  button.removeAttribute('hidden');
+}
+;
+button.addEventListener('click', showMenu);
+close.addEventListener('click', hideMenu);
+overlay.addEventListener('click', hideMenu);
+///
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:600,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+  
+</body>
+
+</html>

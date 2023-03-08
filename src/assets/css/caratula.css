@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #18181B;
+}
+
+
+.button {
+    width: 100%;
+    display: flex;
+}
+
+.hero {
+    width: 50%;
+}
+
+.detel{
+    margin-left: 8%;
+    margin-top: 0%;
+}
+
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: rgb(39, 146, 28);
+    
+}
+
+.detel p{
+    color: #555;
+    line-height: 22px;
+}
+
+.detel a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images {
+    position: relative; /* Establece el contenedor como relativo para que la imagen se posicione dentro de él */
+    width: 100%; /* Establece el ancho del contenedor al 100% de la pantalla */
+    height: 400px; /* Establece la altura del contenedor */
+  }
+  
+  img.celus {
+    max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+    position: absolute; /* Establece la imagen como absoluta para posicionarla dentro del contenedor */
+    top: 40%; /* Establece la posición superior de la imagen al 50% de la altura del contenedor */
+    left: 50%; /* Establece la posición izquierda de la imagen al 50% del ancho del contenedor */
+    transform: translate(-50%, -50%); /* Centra la imagen horizontal y verticalmente */
+    
+  }
+
+  
+  
+  
+  
+.button1 {
+    background-color: #21212100;
+    border: #21212100;
+}
+
+
+
+.images:hover .celus{
+    bottom: 15%;
+}
+
+@media screen and (max-width:690px) {
+    .images {
+        display: none;
+    }
+
+    .detel h1, .detel p {
+        text-align: center;
+    }
+    .hero {
+        width: 100%;
+    }
+    .detel {
+        margin-left: 0;
+    }
+    .button1 {
+        display: flex;
+        margin: auto;
+    }
+    .hero {
+        overflow-x: hidden;
+    }
+}
+
