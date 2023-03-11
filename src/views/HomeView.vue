@@ -5,10 +5,10 @@
   <div class="bodygaleria">
     <p class="heading">NUESTROS TRABAJOS</p>
     <div class="gallery-image">
-    <MiGaleria :image="`assets/img/girl.png`"></MiGaleria>
-    <MiGaleria :image="`assets/img/girl.png`"></MiGaleria>
+
+      <MiGaleria  v-for="(item, x) in myWorks" :key="x" :image="`${item.image}`"></MiGaleria>
+    </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -17,6 +17,8 @@ import MiGaleria from "@/components/Galeria.vue"
 import MiCaratula from "@/components/Caratula.vue"
 import MiCards from "@/components/Cards.vue"
 
+import worksData from "@/assets/my_works.json";
+
 export default {
   name: 'HomeView',
   components: {
@@ -24,8 +26,14 @@ export default {
     MiCards,
     MiEquipo,
     MiGaleria,
+  },
+  data() {
+    return {
+      myWorks: worksData
   }
 }
+}
+
 </script>
 
 
