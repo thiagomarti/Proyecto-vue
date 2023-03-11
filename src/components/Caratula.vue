@@ -31,7 +31,7 @@
         </div>
         </div>
     <div class="images">
-        <img src="../assets/img/cel-2021-.png" class="celus">
+        <img src="assets/img/cel-2021-.png" class="celus">
     </div>
 </section>
 

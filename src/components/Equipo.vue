@@ -3,7 +3,7 @@
 <div class="cards-list">
     <div class="card 4">
         <div class="card_image">
-          <img src="../assets/img/Avatar-Marti.png"/>
+          <img src="assets/img/Avatar-Marti.png"/>
           </div>
         <div class="card_title title-black">
           <p>Thiago Martiñá</p>
@@ -11,7 +11,7 @@
         </div>
         <div class="card 4">
             <div class="card_image">
-              <img src="../assets/img/Avatar-Bari.png" />
+              <img src="assets/img/Avatar-Bari.png" />
               </div>
             <div class="card_title title-black">
               <p>Joaquin Barila</p>

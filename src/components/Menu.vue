@@ -4,19 +4,19 @@
      <div class="laptop"> <i class='bx bx-laptop bx-lg' style='color:#099904'  ></i> </div>
       <h1 class="logo"> M&B Webcoders </h1>
     </div>
-      
       <input type="checkbox" id="click">
       <label for="click" class="menu-btn">
         <i class="fas fa-bars"></i>
       </label>
       <ul>
-        <li><a class="active" href="#">Inicio</a></li>
-        <li><a href="#">Nuestros trabajos</a></li>
-        <li><a href="#">Sercios</a></li>
-        <li><a href="../public/hola.html">Contacto</a></li>
+          <router-link to="/">Home</router-link> |
+          <router-link to="/our_work">Nuestros trabajos</router-link> |          
+          <router-link to="/services">Servicios</router-link> |
+          <router-link to="/contact">Contacto</router-link>
       </ul>
     </nav>
-</template>
+    <router-view/>
+  </template>
 
 <script>
 export default {
